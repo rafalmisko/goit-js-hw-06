@@ -36,8 +36,6 @@ newListItems.append(...newItems);
 // console.log(newList);
 
 
-
-
 // newList.forEach((item) => {
 //  const newItem = document.createElement("li"); 
 //  newItem.textContent = ingredients; 
