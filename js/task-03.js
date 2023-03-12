@@ -24,11 +24,27 @@ const imageGallery = document.querySelector("ul");
 
 const element = images
     .map(({url, alt}) => {
-				   return `<li><img class="picture" src=${element.url} width = '350' height = '220' alt='${element.alt}'></img></li>`;
+				   return `<li><img class="picture" src=${url} width = '350' height = '220' alt='${alt}'></img></li>`;
 				})
  
     .join(""); 
 
-  imageGallery.insertAdjacentHTML("afterend", element);
-   
-    
+imageGallery.insertAdjacentHTML("afterend", element);
+
+document.body.style.backgroundColor = "#0009";
+const imageGalleryItems = document.querySelectorAll('ul'); 
+
+console.log(imageGalleryItems); 
+Array.from(imageGalleryItems).forEach(element => {element.style.listStyleType = 'none';})
+
+// const imageGalleryItem = document.getElementByClassName('.gallery').forEach(function(element) { 
+//   element.style.listStyleType = 'none'; 
+// });
+
+//imageGalleryItem.style.listStyleType = 'none';
+//Array.from(imageGalleryItem).forEach(element => {element.style.listStyleType = 'none';})
+// Array.prototype.forEach.call(document.getElementByClassName('answer'))
+
+// document.querySelectorAll('.myElement').forEach(function(element) {
+//     element.style.size = '100px';
+// });
