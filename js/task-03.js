@@ -35,7 +35,7 @@ document.body.style.backgroundColor = "#0009";
 const imageGalleryItems = document.querySelectorAll('ul'); 
 
 console.log(imageGalleryItems); 
-Array.from(imageGalleryItems).forEach(element => {element.style.listStyleType = 'none';})
+Array.from(imageGalleryItems).forEach(element => {images.style.listStyleType = 'none';})
 
 // const imageGalleryItem = document.getElementByClassName('.gallery').forEach(function(element) { 
 //   element.style.listStyleType = 'none'; 
